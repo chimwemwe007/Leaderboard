@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Leaderboard</title>
 </head>
+
 <body>
-  <h1 class="intro">Let's Make it Happen!</h1>
+    <header>
+        <h1>Leaderboard</h1>
+    </header>
+    <main id="container">
+        <section id="list-score">
+            <div id="list-header">
+                <h3>Recent Score</h3>
+                <button type="button" id="refresh">Refresh</button>
+            </div>
+            <div>
+                <ul id="list">
+                    <li id="list">Name: 100</li>
+                    <li id="list">Name: 90</li>
+                    <li id="list">Name: 80</li>
+                    <li id="list">Name: 70</li>
+                    <li id="list">Name: 60</li>
+                    <li id="list">Name: 50</li>
+                    <li id="list">Name: 40</li>
+                </ul>
+            </div>
+        </section>
+        <section id="add-score">
+            <h3>Add your score</h3>
+            <form id="score-form">
+                <input type="text" placeholder="Your name">
+                <input type="text" placeholder="Your score">
+                <button type="submit" id="add">Submit</button>
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>

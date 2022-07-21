@@ -9,6 +9,8 @@
 
 - Major languages
 > Javascript (ES6)
+> HMTL
+> CSS
 > Webpack
 - Frameworks
 - Technologies used
