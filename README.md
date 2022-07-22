@@ -3,6 +3,7 @@
 # Leaderboard Application
 
 > This is a HTML/CSS and Javscript based web application for a Leaderboard list app.
+> In this activity i will continue working on the Leaderboard list app, sending and receiving data from/to the Leaderboard API.
 
 ## Built With
 
