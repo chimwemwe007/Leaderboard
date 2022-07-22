@@ -1,6 +1,6 @@
+import { submitScore, loadScores } from './add-score.js';
 import './index.css';
-import loadScores from './refresh-scores.js';
-import { submitScore } from './add-score.js';
+// import loadScores from './refresh-scores.js';
 
 loadScores();
 

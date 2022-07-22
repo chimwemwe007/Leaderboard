@@ -1,6 +1,4 @@
-import loadScores from './refresh-scores.js';
-
-const addScore = (name, score, id) => {
+function addScore(name, score, id) {
   const ScoresContainer = document.getElementById('leaders-container');
   const bookHTML = document.createElement('div');
   bookHTML.classList.add('leader-item');
@@ -12,6 +10,27 @@ const addScore = (name, score, id) => {
                 <p class="score">${score}</p>
             `;
   ScoresContainer.appendChild(bookHTML);
+}
+
+const loadScores = () => {
+  const ScoresContainer = document.getElementById('leaders-container');
+  ScoresContainer.innerHTML = '';
+  const getScoresData = async () => {
+    const request = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/KJxUTySzzZA6BH0fd9pM/scores/');
+    const data = await request.json();
+    return data.result;
+  };
+
+  getScoresData().then(
+    (value) => {
+      value.forEach((score, id) => {
+        addScore(score.user, score.score, id);
+      });
+    },
+    (error) => {
+      throw error;
+    },
+  );
 };
 
 const submitScore = (user, score) => {
@@ -34,4 +53,4 @@ const submitScore = (user, score) => {
     });
   }
 };
-export { addScore, submitScore };
+export { addScore, submitScore, loadScores };
