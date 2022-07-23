@@ -1,6 +1,5 @@
 import { submitScore, loadScores } from './add-score.js';
 import './index.css';
-// import loadScores from './refresh-scores.js';
 
 loadScores();
 
