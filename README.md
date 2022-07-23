@@ -2,7 +2,8 @@
 
 # Leaderboard Application
 
-> This is a HTML/CSS and Javscript based web application for a Leaderboard list app.
+> This is a HTML/CSS and Javscript based web application for a Leaderboard list app build with an API
+> In this project i worked on the styling of the website.
 
 ## Built With
 
@@ -22,6 +23,9 @@
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
+
+- open a terminal in your vs code
+- run webpack with the command npm start
 
 ### Prerequisites
 
