@@ -1,4 +1,4 @@
-function addScore(name, score, id) {
+  const addScore = (name, score, id) => {
   const ScoresContainer = document.getElementById('leaders-container');
   const bookHTML = document.createElement('div');
   bookHTML.classList.add('leader-item');
